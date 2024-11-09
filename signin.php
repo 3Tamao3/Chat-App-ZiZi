@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZiZi Chat - Sign up</title>
+    <title>ZiZi Chat - Sign In</title>
     <link rel="icon" href="Pictures/Z.png">
     <style>
     * {
@@ -85,6 +85,9 @@
         color: #070809;
         border-radius: 15px;
     }
+    .sign-up-box p{
+        padding-top: 20px;
+    }
     </style>
 </head>
 <body>
@@ -96,17 +99,14 @@
 
         
     <div class="sign-up-box" class="col-2">
-        <h2>Create an Account</h2>
+        <h2>Welcome</h2>
         <p>Username</p>
-        <input type="text" placeholder="ex.: Ilik3Cats24" required>
+        <input type="text" placeholder="Username" required>
         <p>Password</p>
         <input type="password" placeholder="Password" required>
-        <p>Confirm Password</p>
-        <input type="password" placeholder="Confirm Password" required>
         <br><br><br>
-        <button>Sign Up</button>
-        <br><br><br>
-        <p>Already got an Account? <a href="google.com">Log In</a> here</p>
+        <button>Sign in</button>
+        <p>Don't have an Account? <a href="google.com">Sign Up</a> here</p>
     </div>
         
 
