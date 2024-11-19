@@ -1,118 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZiZi Chat</title>
-<link rel="icon" href="Pictures/Z.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZiZi</title>
 
-<style>
-    html{
-            font-family: "Inter", Arial, Helvetica, sans-serif;
-            color: #ebebf4;
-            background-color: #05050f;
-}
+    <style>
+        html {
+            background-image: url(./Pictures/Background\ .jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
-ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: solid 1px white;
-}
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1px 1px;
+            background-color: rgb(0, 0, 0, .8);
+            border-radius: 10px;
+        }
 
-a {
-    display: flex; 
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
+        .z-icon {
+            width: 100px;
+            height: 60px;
+        }
 
-li {
-    margin-left: 20px; 
-}
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
+        li {
+            margin: 0px;
+            padding: 0px;
+        }
 
-li a:hover {
-    background-color: #0a0a1d;
-}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-.right-space {
-    margin-left: auto;
-    display: flex;
-    margin-right: 100px;
-}
+        li a:hover:not(.active) {
+            text-decoration: underline;
+            background-color: rgb(0, 0, 0, .8);
+            border: solid 1px white;
+            border-radius: 10px;
+        }
 
-.z-icon {
-    width: 64px;
-    height: 64px;
-    margin-left: 100px;
-    margin-right: 15px;
-}
+        .login{
+            background-color: rgb(0, 0, 0, .8);
+            border: solid 1px white;
+            border-radius: 10px;
+        }
 
-        .box{
-        font-size: large;
-        width: 850px;
-        height: 750px;
-        border: solid 1px white;
-        border-radius: 10px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 60px;
-        padding-top: 1px;
-        padding-bottom: 10px;
-    }
+        .cont1{
+            float: right;
+            margin-top: 90px;
+            margin-right: 550px;
+            width: 500px;
+            height: 300px;
+            padding: 1px;
+            background-color: rgb(0, 0, 0, .8);
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid white;
+        }
 
-    .box img{
-        width: 600px;
-        display: block;
-        margin: 35px auto;
-        border-radius: 15px;
-    }
+        .cont2{
+            float: right;
+            margin-top: 110px;
+            margin-right: 550px;
+            width: 500px;
+            height: 250px;
+            padding: 1px;
+            background-color: rgb(0, 0, 0, .8);
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid white;
+        }
 
-    .box a{
-    display: inline-block;
-    margin: 0 5px;
-    color: #ebebf4;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 10px; 
-    border: 1px solid white;
-    border-radius: 5px; 
-    }
-</style>
+        .cont3{
+            float: left;
+            margin-top: -180px;
+            margin-left: 200px;
+            width: 500px;
+            height: 500px;
+            padding: 1px;
+            background-color: rgb(0, 0, 0, .8);
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid white;
+        }
+
+        .underline{
+            border-bottom:1px solid white;
+            margin-left: 50px;
+            width:400px;
+            padding-bottom:5px;
+        }
+
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border: solid 1px white;
+            border-radius:15px;
+        }
+
+        button:hover{
+            width: 200px;
+            height: 50px;
+            background-color: #242424;
+            color: white;
+            border: solid 1px white;
+            border-radius:15px;
+        }
+
+        .cont1 p{
+            display: inline-block;
+            text-align: justify;
+            word-spacing: 3px;
+            font-size: 20px;
+            line-height: 1.6;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .cont3 p{
+            display: inline-block;
+            text-align: justify;
+            word-spacing: 5px;
+            font-size: 20px;
+            line-height: 1.6;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
 </head>
 <body>
-<nav>
-    <ul>
-        <a href="google.com">
-            <img class="z-icon" src="Pictures/Z.png" alt="Z Icon"> Chat ZiZi
+    <nav>
+        <a href="#">
+            <img class="z-icon" src="./Pictures/Z.png" alt="ZiZi Icon">
         </a>
-        <div class="right-space">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">Sign up</a></li>
-            <li><a href="#about">Sign in</a></li>
-        </div>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul style="float:right">
+            <li><a href="#">Login |</a> </li>
+            <li><a class="login" href="#">Register</a></li>
+        </ul>
+    </nav>
+    <div class="cont1"><h1>Welcome to<br>ZiZi<div class="underline"></div></h1><p>Connect, chat and share your world seamlessly with friends and communities.</p></div>
+    <div class="cont2"><h1>Ready To<br>Dive In?<div class="underline"></div></h1><button>Join Us</button></div>
+    <div class="cont3"><h1>About ZiZi<div class="underline"></div></h1><p>Join the Next Generation of Online Communities
 
-    <div class="box">
-        <h1>👋Welcome To ZiZi!</h1>
-        <p>Chat with anyone, anytime—securely and effortlessly.
-<br>
-Sign in or create an account to get started!</p>
-<br>
-<p> <a href="google.com">Sign In</a> or <a href="google.com">Create An Account</a> here.</p>
-    <img src="https://media.istockphoto.com/id/1217093906/photo/womens-hand-typing-on-mobile-smartphone-live-chat-chatting-on-application-communication.jpg?s=612x612&w=0&k=20&c=37apRN2rOKxtb2MCDxoIlmi5ImkDkGLwSxYDyC-Ljc0=">
-    </div>
+At Zizi, we bring you a platform that’s more than just messaging—it's a space to express, connect, and engage with people who share your passions. Whether you’re gaming, working on projects, or just hanging out, Zizi is here to make your experience meaningful and fun.
+</p></div>
 </body>
 </html>
