@@ -138,11 +138,11 @@
         .cont3 p{
             display: inline-block;
             text-align: justify;
-            word-spacing: 5px;
-            font-size: 20px;
+            word-spacing: 3px;
+            font-size: 22px;
             line-height: 1.6;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .space-left{
@@ -168,7 +168,7 @@
         </ul>
     </nav>
     <div class="cont1"><h1>Welcome to<br>ZiZi<div class="underline"></div></h1><p>Connect, chat and share your world seamlessly with friends and communities.</p></div>
-    <div class="cont2"><h1>Ready To<br>Dive In?<div class="underline"></div></h1><button>Join Us</button></div>
+    <div class="cont2"><h1>Ready To<br>Dive In?<div class="underline"></div></h1><a href="./register.php"><button>Join Us</button></a></div>
     <div class="cont3"><h1>About ZiZi<div class="underline"></div></h1><p>Join the Next Generation of Online Communities
 
 At Zizi, we bring you a platform that’s more than just messaging—it's a space to express, connect, and engage with people who share your passions. Whether you’re gaming, working on projects, or just hanging out, Zizi is here to make your experience meaningful and fun.
